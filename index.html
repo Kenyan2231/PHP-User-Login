@@ -4,11 +4,48 @@
 	<meta http-equiv="content-type" content="text/html" />
 	<meta name="author" content="Julius Ondari" />
 	<title>PHP Login</title>
-    <!-- Insert bootstrap CSS  support Files-->
+    <!-- Insert bootstrap-4 beta CSS  support Files-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+    label {
+        width: 100%;
+        }
+    </style>
 </head>
 
-<body>
+<body class="container">
+    <h1>Login Form</h1>
+    <div class="">
+    
+    <!--card-->
+        <div class="card col-md-6 mx-auto">
+            <div class="card-header">
+                <h2 class="mb-0">Login Form</h3>
+            </div>
+            <!-- card-block -->
+            <div class="card-block">
+                <form class="form" role="form" autocomplete="off" id="loginForm">
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="tel" class="form-control" name="phoneNumber" id="phoneNumber" required="">
+                    </div>  
+                    <div class="form-group">
+                        <label>Password <a href="#" class="float-right">Forgot Password?</a></label>
+                        <input type="password" class="form-control" name="password" id="password" required="" autocomplete="password">
+                    </div>
+                         
+                    <button type="button" class="btn btn-success btn-lg float-left">Login</button>
+                </form>
+            </div>
+            <!--/card-block-->
+        </div>
+        <!--/card-->
+        
+    </div>
+    <div class="card col-md-6 mb-5 mx-auto">               
+        <p>New to Website  <a href="#">  Create An Account</a></p>
+    </div>
+    
 
 
     <!-- Insert Jquery and Popper JS support Files-->
@@ -17,6 +54,7 @@
     <script src="js/popper.min.js"></script>
     <!-- Insert Bootstrap JS support Files-->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Include Jquery form Validation methods -->
     <script src="js/validation.min.js"></script>
 </body>
 </html>
